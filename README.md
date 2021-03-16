@@ -6,7 +6,7 @@ Prérequis : cloner ce repository.
 
 Heraclès doit vaincre le féroce lion de Némée, connu pour sa peau impénétrable, le rendant très difficile à blesser. Avant de débuter sa quête, tout héros doit se préparer un peu :
 
-- Créer une classe Fighter (dans un fichier *src/Fighter.php*) avec
+- Créer une classe Fighter (dans le fichier vide *src/Fighter.php*) avec
     la constante
     - MAX_LIFE = 100 : les combattants ont 100 points de vie max
 
@@ -18,7 +18,7 @@ Heraclès doit vaincre le féroce lion de Némée, connu pour sa peau impénétr
 
 Il y aurait potentiellement plein d'autres choses à ajouter mais pour un début c'est déjà pas mal !
 
-- Dans le fichier *index.php*, créer deux instances de la classe Fighter, pour :
+- Dans le fichier fourni *index.php*, créer deux instances de la classe Fighter, pour :
 - 🧔 Heracles , force de 20, dextérité de 6 
 - 🦁 Lion de Némée, force de 11, dextérité de 13 
 Pour avoir un rendu un peu plus sympathique en attendant de travailler dans le navigateur, tu pourras ajouter une icône dans la chaîne de caractère du nom (https://emojipedia.org/)
