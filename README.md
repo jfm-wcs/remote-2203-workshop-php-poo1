@@ -42,14 +42,15 @@ Héraclès affûte son épée, attache son bouclier. Il est prêt à en découdr
 
 1. Retourne dans *Fighter.php* et crée une première méthode `getDefense()` qui te donnera ton score de défense.
 Pour le moment, le score de défense correspond tout simplement à la dextérité du Fighter (mais plus tard nous complexifierons ce calcul donc c’est bien que la méthode existe)
-2. Créé ensuite une méthode `getDamage()`. Cette méthode doit te renvoyer les points de dégâts d’une attaque. Cette valeur sera un nombre aléatoire compris entre 1 et la force du combattant (utilise la fonction `rand()`)
+2. Créé ensuite une méthode `getDamage()`. Cette méthode doit te renvoyer les points de dégâts d’une attaque. Cette valeur sera un nombre aléatoire compris entre 1 et la force du combattant (utilise la fonction `rand()` ([Documentation](https://www.php.net/manual/fr/function.rand.php))
 3. Créé une méthode `fight()` qui va te permettre d’attaquer l’ennemi. Pour déterminer qui tu vas taper, la méthode `fight()` va prendre en paramètre un autre objet Fighter ! Dans le corps de ta méthode, fais en sorte de :
 
     - récupérer le nombre de point de dégâts que fait l'**attaquant** à l’aide de `getDamage()` (les dégâts faisant appel à un nombre aléatoire, la valeur renvoyée par `getDamage()` varie donc à chaque appel de la méthode).
 
     - atténuer les dégâts en soustrayant aux dommages le score de défense de l'**attaqué** (sans jamais aller en dessous de zéro)
 
-    - diminuer le nombre de points de vie de l'**attaqué** par la valeur ainsi obtenue.
+    - diminuer le nombre de points de vie de l'**attaqué** par la valeur ainsi obtenue. Attention, la vie d’un combattant ne peut pas tomber en dessous de zéro, pense également à vérifier cela;
+
 
     En résumé :
     ```
@@ -64,7 +65,6 @@ Voilà, ta classe est prête, tu n’as plus qu’à l’utiliser !
 Héraclès pénètre dans la grotte, le lion est là, ses yeux rouges pointés vers l’intrus. Le combat est imminent.
 
 1. Dans le fichier *index.php*, créé une boucle permettant d’effectuer un combat à mort ! Tant qu’un des deux ennemis a une vie > 0, le combat continue donc.
-> Remarque : la vie d’un combattant ne peut pas tomber en dessous de zéro, vérifie cela au moment où tu modifies la propriété *life*;
 
 2. À chaque "round" 🕛, Héraclès attaque le lion, puis le lion attaque Héraclès. Tu dois afficher le numéro du round, qui attaque qui, et les points de vie restant. 
 
@@ -72,7 +72,7 @@ Héraclès pénètre dans la grotte, le lion est là, ses yeux rouges pointés v
 
 ![instructions](instructions.png)
 
-🎁 BONUS : créer une nouvelle méthode `isDead()` peut t’aider à optimiser le code.
+🎁 BONUS : créer une nouvelle méthode `isAlive()` peut t’aider à optimiser le code.
 
 ## Conclusion
 
