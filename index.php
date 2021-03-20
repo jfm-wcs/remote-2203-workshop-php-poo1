@@ -1,4 +1,4 @@
 <?php
 
-// First Labour : Hercules vs Nemean Lion
+// First Labour : Heracles vs Nemean Lion
 // use your Figher class here

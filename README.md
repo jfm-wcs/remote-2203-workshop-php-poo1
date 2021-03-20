@@ -1,4 +1,4 @@
-# Workshop 1 : Le lion de Némée
+# Les travaux d'Héraclès - Premier des travaux : le lion de Némée
 
 Prérequis : cloner ce *repository*.
 
@@ -38,7 +38,7 @@ Pour se faire tape juste : `php index.php` dans ton terminal.
 
 ## FIGHT !
 
-Héraclès affûte son épée, attache son bouclier. Il est prêt à en découdre !
+Héraclès s'échauffe un peu, bande ses muscles, écrase quelques rocher à main nue. Il est prêt à en découdre !
 
 Créé une méthode `fight()` qui va te permettre d’attaquer l’ennemi. Pour déterminer qui tu vas taper, la méthode `fight()` va prendre en paramètre un autre objet Fighter ! Dans le corps de ta méthode, tu vas calculer tout d'abord le nombre de point de dégats de l'attaquant.
 
