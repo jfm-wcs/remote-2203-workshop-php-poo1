@@ -40,17 +40,13 @@ Pour se faire tape juste : `php index.php` dans ton terminal.
 
 Héraclès affûte son épée, attache son bouclier. Il est prêt à en découdre !
 
-1. Retourne dans *Fighter.php* et crée une première méthode `getDefense()` qui te donnera ton score de défense.
-Pour le moment, le score de défense correspond tout simplement à la dextérité du Fighter (mais plus tard nous complexifierons ce calcul donc c’est bien que la méthode existe)
-2. Créé ensuite une méthode `getDamage()`. Cette méthode doit te renvoyer les points de dégâts d’une attaque. Cette valeur sera un nombre aléatoire compris entre 1 et la force du combattant (utilise la fonction `rand()` ([Documentation](https://www.php.net/manual/fr/function.rand.php))
-3. Créé une méthode `fight()` qui va te permettre d’attaquer l’ennemi. Pour déterminer qui tu vas taper, la méthode `fight()` va prendre en paramètre un autre objet Fighter ! Dans le corps de ta méthode, fais en sorte de :
+Créé une méthode `fight()` qui va te permettre d’attaquer l’ennemi. Pour déterminer qui tu vas taper, la méthode `fight()` va prendre en paramètre un autre objet Fighter ! Dans le corps de ta méthode, tu vas calculer tout d'abord le nombre de point de dégats de l'attaquant.
 
-    - récupérer le nombre de point de dégâts que fait l'**attaquant** à l’aide de `getDamage()` (les dégâts faisant appel à un nombre aléatoire, la valeur renvoyée par `getDamage()` varie donc à chaque appel de la méthode).
+    - Le combattant va taper plus ou moins fort à chaque fois, le nombre de point de dégâts que fait l'**attaquant** sera donc un nombre aléatoire compris entre 1 et la force du combattant (utilise la fonction `rand()` ([Documentation](https://www.php.net/manual/fr/function.rand.php))
 
-    - atténuer les dégâts en soustrayant aux dommages le score de défense de l'**attaqué** (sans jamais aller en dessous de zéro)
+    - Mais l'attaqué peut se défendre et esquiver ! Tu vas donc atténuer les dégâts en soustrayant aux dommages, la dextérité de l'**attaqué** (sans **jamais aller en dessous de zéro**)
 
-    - diminuer le nombre de points de vie de l'**attaqué** par la valeur ainsi obtenue. Attention, la vie d’un combattant ne peut pas tomber en dessous de zéro, pense également à vérifier cela;
-
+    - Une fois les dégats calculés, diminue le nombre de points de vie de l'**attaqué** par la valeur ainsi obtenue. Attention, la vie d’un combattant **ne peut pas tomber en dessous de zéro**, pense également à vérifier cela;
 
     En résumé :
     ```
