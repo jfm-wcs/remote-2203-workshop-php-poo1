@@ -6,7 +6,7 @@ Prérequis : cloner ce *repository*.
 
 Héraclès doit vaincre le féroce lion de Némée, connu pour sa peau impénétrable, le rendant très difficile à blesser. Avant de débuter sa quête, tout héros doit se préparer un peu :
 
-Créer une classe Fighter (dans le fichier vide *src/Fighter.php*) avec :
+Créer une classe `Fighter` (dans le fichier vide *src/Fighter.php*) avec :
 
 - la constante
     - MAX_LIFE = 100 : les combattants ont 100 points de vie max
@@ -25,7 +25,7 @@ Ensuite, dans le fichier fourni *index.php*, créé deux instances de la classe 
 
 - 🦁 Lion de Némée, force de 11, dextérité de 13
 
-Pour avoir un rendu un peu plus sympathique en attendant de travailler dans le navigateur, tu peux ajouter une icône dans la chaîne de caractère du nom (https://emojipedia.org/).
+Pour avoir un rendu un peu plus sympathique en attendant de travailler dans le navigateur, tu peux ajouter une icône dans la chaîne de caractères du nom (https://emojipedia.org/).
 Tu peux également t'amuser à faire varier les valeurs, mais celles fournies te donneront des combats relativement équilibrés.
 
 > 💡**HINT** : un *constructeur* va être nécessaire dans ta classe pour initialiser ces propriétés avec des valeurs différentes pour Héraclès et le Lion.
@@ -38,7 +38,7 @@ Pour se faire tape juste : `php index.php` dans ton terminal.
 
 ## FIGHT !
 
-Héraclès s'échauffe un peu, bande ses muscles, écrase quelques rocher à main nue. Il est prêt à en découdre !
+Héraclès s'échauffe un peu, bande ses muscles, écrase quelques rochers à main nue. Il est prêt à en découdre !
 
 Créé une méthode `fight()` qui va te permettre d’attaquer l’ennemi. Pour déterminer qui tu vas taper, la méthode `fight()` va prendre en paramètre un autre objet Fighter ! Dans le corps de ta méthode, tu vas calculer tout d'abord le nombre de point de dégats de l'attaquant.
 
@@ -62,7 +62,7 @@ Héraclès pénètre dans la grotte, le lion est là, ses yeux rouges pointés v
 
 1. Dans le fichier *index.php*, créé une boucle permettant d’effectuer un combat à mort ! Tant qu’un des deux ennemis a une vie > 0, le combat continue donc.
 
-2. À chaque "round" 🕛, Héraclès attaque le lion, puis le lion attaque Héraclès. Tu dois afficher le numéro du round, qui attaque qui, et les points de vie restant. 
+2. À chaque "round" 🕛, Héraclès attaque le lion, puis le lion attaque Héraclès. Tu dois afficher le numéro du round, qui attaque qui, et les points de vie restants. 
 
 3. Une fois l’un des deux vaincus, tu dois alors afficher le vainqueur 🏆 et le perdant 💀. La capture d’écran ci-dessous te résume ce qui est attendu.
 
