@@ -1,6 +1,3 @@
 <?php
 
-class Fighter
-{
-
-}
+/* Fighter class definition */
